@@ -22,6 +22,9 @@
     padding: 3px;
     
 }
+.logo:hover {
+    color: white;
+}
 .Hrm-Day{
     background-color: whitesmoke;
     display: flex;
@@ -65,6 +68,12 @@ p{
 .single-head-2:hover{
     color: black;
 }
+.books>div{
+    display: flex;
+}
+.books>div>div{
+    display: flex;
+}
 .books:hover{
     background-color:rgb(240,230,140);
     color: black;
@@ -98,6 +107,7 @@ p{
 .photo-album{
     height: 360px;
     background-color: black;
+    display: flex;
 }
 .photo-album:hover{
     background-color: rgb(240,230,140);
@@ -107,6 +117,10 @@ p{
     color: black ;
     background-color: rgb(240,230,140) ;
     margin: 0px 50px;  
+}
+.single-head:hover{
+    color:rgb(240,230,140)  ;
+    background-color: black;
 }
 .photo-frame .photo img{
     width: 310px;
@@ -145,6 +159,8 @@ p{
 .footer{
     background-color: black;
     margin: 50px;
+    width: 93%;
+    height: 300px; 
 }
 .footer:hover{
     background-color: rgb(240,230,140); 
@@ -156,4 +172,104 @@ p{
 .footer h1{
     color: rgb(240,230,140);
     background-color: none;
+}
+@media screen and (min-width: 365px) and (max-width: 1024px) {
+    body{
+        margin: 0px 20px;
+    }
+    .sec{
+        background-color: black;
+        margin: 50px 0px;
+        
+        
+    }
+    .books>div{
+        flex-direction: column;
+    }
+    .books>div>div{
+        flex-direction: column;
+    }
+    .books{
+        margin: 0px;
+        padding: 20px;
+    }
+    .photo-album{
+        flex-direction: column;
+    }
+    .logo{
+        font-size: 20px;
+        font-family: 'Dancing Script', cursive;
+        color: rgb(240,230,140) ;
+        border: 2px solid  rgb(240,230,140);
+        padding: 2px;
+        
+    }
+    .photo-frame{
+        height: 400px;
+        border: 2px solid rgb(240,230,140)  ;
+        border-radius: 20px;
+        position: relative;
+        margin: 10px 0px;
+        padding: 10px 0px;
+        overflow: hidden;
+        
+    }
+    .photo-album{
+        height: 800px;
+        background-color: white;
+        flex-direction: column;
+    }
+    .single-head{
+        margin: 30px 0px; 
+        padding: 0px 5px;
+    }
+    .single-head-2{
+        font-size: 20px;
+        margin: 0px; 
+        padding: 5px;
+
+    }
+    .footer{
+        background-color: black;
+        margin: 0px;
+        width: 100%;
+        height: 300px; 
+        padding: 20px;
+        text-align: center;
+    }
+    h1{
+        text-align: center;
+        margin-top: 20px;
+    }
+    h1:hover{
+        color: black;
+        background-color: rgb(240,230,140)  ;
+    }
+    p{
+        margin: 10px 0px;
+    }
+    .sec:hover h1{
+        color: black;
+        background-color: rgb(240,230,140);
+    }
+    .photo-album:hover{
+        background-color: white;
+    }
+    
+    .photo-album:hover .photo-frame {
+        border: 2px solid black;
+    }
+    .details{
+        padding: 10px;
+        position: absolute;
+        display: none;
+        width: 280px;
+        height: 230px;
+        top: 0;
+    }
+    .books img{
+        width: 300px;
+        height: 400px;
+        align-items: center;
+    }
 }
